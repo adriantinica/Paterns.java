@@ -1,25 +1,23 @@
-public class Laptop implements Product {
+public class Laptop extends Product {
     
     private String name;
     private double price;
-     private String CPU;
+    private String CPU;
 
-    @Override
+    
+
     public String getName() {
-       return name;
+        return name;
     }
 
-    @Override
     public void setName(String name) {
-        this.name = name;
-    }  
-
-    @Override
-    public double getPrice() {
-       return price;
+       this.name = name;
     }
 
-    @Override
+    public double getPrice() {
+        return price;
+    }
+
     public void setPrice(double price) {
         this.price = price;
     }
