@@ -1,4 +1,4 @@
-public class Phone implements Product {
+public class Phone extends Product {
 
     private String name;
     private double price;
