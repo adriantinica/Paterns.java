@@ -1,4 +1,4 @@
-public class Printer implements Product {
+public class Printer extends Product {
 
     private String name;
     private double price;
