@@ -3,17 +3,23 @@ public class ProductFactory {
     //helper method                           // indicates type and other parameters
     private static  Product createBaseProduct(String type, String name, double price){
         Product product=null;
-        if (type.equals("phone")) {
-            product = new Phone();    
-        } else if(type.equals("printer")) {
-            product= new Printer();
-        }else if(type.equals("laptop")) {
-            product= new Laptop();
+        switch (type) {
+            case "phone":
+                product = new Phone();
+                break;
+            case "printer":
+                product = new Printer();
+                break;
+            case "laptop":
+                product = new Laptop();
+                break;
         }
-        if(product != null){
+        
+        if (product != null) {
             product.setName(name);
             product.setPrice(price);
         }
+        
         return product;
 
     }
